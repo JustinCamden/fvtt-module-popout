@@ -226,13 +226,13 @@ class PopoutModule {
         buttonText = "";
       }
       const link = $(
-        `<a id="${domID}" class="popout-module-button"><i class="fas fa-external-link-alt" title="${game.i18n.localize(
+        `<a id="${domID}" class="popout-module-button header-button"><i class="fas fa-external-link-alt" title="${game.i18n.localize(
           "POPOUT.PopOut"
         )}"></i>${buttonText}</a>`
       );
       /* eslint-enable no-undef */
 
-      link.on("click", () => this.onPopoutClicked(app));
+      link.on("pointerdown", () => this.onPopoutClicked(app));
       // eslint-disable-next-line no-undef
       if (game && game.settings.get("popout", "showButton")) {
         app.element.find(".window-title").after(link);
@@ -576,6 +576,7 @@ class PopoutModule {
     targetDoc.title = app.title;
 
     // -------------------- Add unload handlers --------------------
+    Hooks.callAll("PopOut:loading", app, popout);
 
     window.addEventListener("unload", async (event) => {
       this.log("Unload event", event);
@@ -705,7 +706,7 @@ class PopoutModule {
           if (families.has(font.family)) {
             try {
               popout.document.fonts.add(font);
-            } catch {} // eslint-disable-line no-empty
+            } catch { } // eslint-disable-line no-empty
           }
         });
       }
@@ -839,7 +840,6 @@ class PopoutModule {
         if (game.keyboard.downKeys.has("Escape")) return; // eslint-disable-line no-undef
       }
       popout.close();
-      return oldClose.apply(app, args);
     };
 
     const oldMinimize = app.minimize.bind(app);
