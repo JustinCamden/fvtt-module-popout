@@ -1,7 +1,7 @@
 {
   "id": "popout",
   "title": "PopOut!",
-  "description": "<p>This module adds a PopOut! button to most actor sheets, journal entries, and applications.</p><p>The PopOut! button allows you to open a sheet/application/document into its own window, for easier viewing or for use with multiple monitors.</p>",
+  "description": "<p>Forked branch to support TJS Svelte apps.</p><p>This module adds a PopOut! button to most actor sheets, journal entries, and applications.</p><p>The PopOut! button allows you to open a sheet/application/document into its own window, for easier viewing or for use with multiple monitors.</p>",
   "version": "2.10",
   "authors": [
     {

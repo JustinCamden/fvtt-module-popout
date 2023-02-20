@@ -232,7 +232,7 @@ class PopoutModule {
       );
       /* eslint-enable no-undef */
 
-      link.on("pointerdown", () => this.onPopoutClicked(app));
+      link.on("click", () => this.onPopoutClicked(app));
       // eslint-disable-next-line no-undef
       if (game && game.settings.get("popout", "showButton")) {
         app.element.find(".window-title").after(link);
@@ -576,6 +576,7 @@ class PopoutModule {
     targetDoc.title = app.title;
 
     // -------------------- Add unload handlers --------------------
+
     Hooks.callAll("PopOut:loading", app, popout);
 
     window.addEventListener("unload", async (event) => {
