@@ -63,14 +63,15 @@
       "flags": {}
     }
   ],
-  "readme": "https://github.com/League-of-Foundry-Developers/fvtt-module-popout#readme",
-  "url": "https://github.com/League-of-Foundry-Developers/fvtt-module-popout",
-  "manifest": "https://raw.githubusercontent.com/League-of-Foundry-Developers/fvtt-module-popout/master/module.json",
-  "download": "https://github.com/League-of-Foundry-Developers/fvtt-module-popout/archive/v2.10.zip",
-  "bugs": "https://github.com/League-of-Foundry-Developers/fvtt-module-popout/issues",
+  "url": "https://github.com/Solidor777/fvtt-module-popout",
+  "bugs": "https://github.com/Solidor777/fvtt-module-popout/issues",
+  "readme": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/README.md",
+  "changelog": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/CHANGELOG.md",
+  "manifest": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/system.json",
+  "download": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/popout.zip",
   "compatibility": {
-    "minimum": "0.9.0",
-    "verified": "10.290",
+    "minimum": "10.288",
+    "verified": "10.291",
     "maximum": "10"
   }
 }
