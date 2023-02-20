@@ -67,7 +67,7 @@
   "bugs": "https://github.com/Solidor777/fvtt-module-popout/issues",
   "readme": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/README.md",
   "changelog": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/CHANGELOG.md",
-  "manifest": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/system.json",
+  "manifest": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/module.json",
   "download": "https://github.com/Solidor777/fvtt-module-popout/releases/download/latest/popout.zip",
   "compatibility": {
     "minimum": "10.288",
